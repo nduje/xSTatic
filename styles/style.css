@@ -8,6 +8,7 @@ header {
     background-color: #1a1a1d;
     text-transform: uppercase;
     
+    border-color: #1a1a1d;
     border-bottom-color: #4e4e50;
     border-width: 1px;
     border-style: solid;
@@ -30,13 +31,21 @@ header {
 }
 
 .logo {
+    display: block;
     width: 150px;
     height: auto;
-    padding: 15px;
     cursor: pointer;
     size: fixed;
     position: relative;
-    max-width: 100%;
+    margin: 0;
+}
+
+#logolink {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 15px;
+    border-radius: 75%;
 }
 
 .tabs {
@@ -65,9 +74,14 @@ main {
 footer {
     background-color: #1a1a1d;
     
+    border-color: #1a1a1d;
     border-top-color: #4e4e50;
     border-width: 1px;
     border-style: solid;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
 
     margin: 0;
 
@@ -80,8 +94,35 @@ footer {
     justify-content: center;
 }
 
-.social_logo {
+#social .social_logo {
+    display: block;
     width: 30px;
     height: auto;
-    padding: 1em;
+    padding: 0;
+}
+
+#social a {
+    display: block;
+    width: 30px;
+    height: auto;
+    padding: 0;
+    margin: 1em;
+    border-radius: 100%;
+
+}
+
+#copyright {
+    color: #4e4e50;
+    font-size: 75%;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 0.25em;
+}
+
+hr.footer_line {
+    border: 1px solid #4e4e50;
+    border-radius: 50%;
+    opacity: 0.75;
+    margin: 15px 5em;
+    margin-bottom: 0;
 }
