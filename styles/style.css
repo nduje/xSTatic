@@ -57,3 +57,31 @@ header .tabs:hover {
     color: currentColor;
     text-decoration: none;
   }
+
+main {
+    margin-top: 200px;
+}
+
+footer {
+    background-color: #1a1a1d;
+    
+    border-top-color: #4e4e50;
+    border-width: 1px;
+    border-style: solid;
+
+    margin: 0;
+
+    z-index: 1;
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social_logo {
+    width: 30px;
+    height: auto;
+    padding: 1em;
+}
