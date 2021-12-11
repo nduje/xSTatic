@@ -61,7 +61,7 @@ header {
 
 .tabs {
     display: inline-block;
-    color: white;
+    color: #dcdcdc;
     font-size: 1.85em;
     margin-right: 2.5em;
     margin-left: 1em;
@@ -70,16 +70,16 @@ header {
 }
 
 header .tabs:hover {
-    color: #950740;
+    color: white;
     text-decoration: solid;
-    border-bottom: 3px #950740 solid;
+    border-bottom: 3px transparent solid;
     margin-bottom: -3px;
 }
 
 header .tabs.selected {
-    color: #6f2232;
+    color: white;
     text-decoration: solid;
-    border-bottom: 3px #6f2232 solid;
+    border-bottom: 3px white solid;
     margin-bottom: -3px;
 }
 
@@ -107,6 +107,90 @@ footer {
     margin: 0;
 
     z-index: 1;
+}
+
+footer #footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0.5em auto;
+}
+
+#footer .logo {
+    display: block;
+    width: 125px;
+    height: auto;
+    cursor: pointer;
+    size: fixed;
+    position: relative;
+}
+
+#footer #footer_logolink {
+    display: block;
+    width: 125px;
+    height: auto;
+    border-radius: 20%;
+    margin-bottom: 2.5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr.small-footer-line {
+    border: 0.5px solid #4e4e50;
+    border-radius: 50%;
+    opacity: 0.75;
+    margin: 0;
+    margin-bottom: 0;
+}
+
+#footer .xstatic-info p {
+    color: #dcdcdc;
+    display: block;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer .footer-tabs li {
+    display: block;
+    list-style: none;
+    font-size: 16px;
+    color: #dcdcdc;
+    text-transform: uppercase;
+
+    padding: 5px;
+}
+
+#footer .footer-tabs li:hover {
+    color: white;
+}
+
+#footer .sponsors {
+    display: block;
+    margin: 0.5em;
+}
+
+#footer .sponsors .split {
+    display: block;
+    height: 75px;
+    width: auto;
+    margin: 10px auto;
+}
+
+#footer .sponsors .loop {
+    display: block;
+    height: 75px;
+    width: auto;
+    margin: 10px auto;
+}
+
+#footer .sponsors #loop_colors_logolink {
+    display: block;
+    border-radius: 25%;
+    margin: 0;
+    padding: 0;
 }
 
 #social {
@@ -140,7 +224,7 @@ footer {
     padding-bottom: 0.25em;
 }
 
-hr.footer_line {
+hr.footer-line {
     border: 1px solid #4e4e50;
     border-radius: 50%;
     opacity: 0.75;
