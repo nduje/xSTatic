@@ -92,6 +92,47 @@ main {
     margin-top: 200px;
 }
 
+main .window {
+    text-align: center;
+    background-color: rgba(38, 38, 42, 0.9);
+    margin: 5em;
+    padding-top: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+    border: 2.5px solid #4e4e50;
+    border-radius: 10% 10% 0% 0%;
+}
+
+#video-teaser-text {
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-right: 10em;
+    margin-bottom: 0.125em;
+    color: #dcdcdc;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.window .main_line {
+    border: 0.5px solid #dcdcdc;
+    border-radius: 50%;
+    opacity: 0.75;
+    margin-bottom: 1em;
+}
+
+#div-video-teaser {
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+#video-teaser {
+    margin: auto;
+    width: 1195px;
+    height: auto;
+}
+
 footer {
     background-color: #1a1a1d;
     
