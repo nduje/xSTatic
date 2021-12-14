@@ -93,7 +93,6 @@ main {
 }
 
 main .window {
-    text-align: center;
     background-color: rgba(38, 38, 42, 0.9);
     margin: 5em;
     padding-top: 1em;
@@ -105,8 +104,8 @@ main .window {
 
 #video-teaser-text {
     display: inline-block;
+    text-align: left;
     margin-top: 0.5em;
-    margin-right: 10em;
     margin-bottom: 0.125em;
     color: #dcdcdc;
     font-weight: bold;
