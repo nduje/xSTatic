@@ -10,7 +10,7 @@ backgroundImages[5] = 'images/background_images/skateboards.jpg';
 function reloadBackgroundImage() {
     let random = Math.floor(Math.random() * backgroundImages.length);
 
-    document.body.style.backgroundImage = `linear-gradient(rgba(38, 38, 42, 0.45), rgba(38, 38, 42, 0.45)), url(${backgroundImages[random]})`;
+    document.body.style.backgroundImage = `linear-gradient(rgba(38, 38, 42, 0.5), rgba(38, 38, 42, 0.5)), url(${backgroundImages[random]})`;
 
     console.log(backgroundImages[random]);
 }

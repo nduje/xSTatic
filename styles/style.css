@@ -93,13 +93,10 @@ main {
 }
 
 main .window {
-    background-color: rgba(38, 38, 42, 0.9);
     margin: 5em;
     padding-top: 1em;
     padding-left: 5em;
     padding-right: 5em;
-    border: 2.5px solid #4e4e50;
-    border-radius: 10% 10% 0% 0%;
 }
 
 #video-teaser-text {
@@ -130,6 +127,7 @@ main .window {
     margin: auto;
     width: 1195px;
     height: auto;
+    border: 2px solid #dcdcdc;
 }
 
 footer {
@@ -151,7 +149,7 @@ footer {
 
 footer #footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin: 0.5em auto;
 }
@@ -199,8 +197,13 @@ hr.small-footer-line {
     font-size: 16px;
     color: #dcdcdc;
     text-transform: uppercase;
+    text-align: center;
 
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #footer .footer-tabs li:hover {
@@ -208,7 +211,7 @@ hr.small-footer-line {
 }
 
 #footer .sponsors {
-    display: block;
+    display: flex;
     margin: 0.5em;
 }
 
