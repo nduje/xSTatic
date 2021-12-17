@@ -99,14 +99,27 @@ main .window {
     padding-right: 5em;
 }
 
-#video-teaser-text {
+.label-text {
     display: inline-block;
     text-align: left;
-    margin-top: 0.5em;
-    margin-bottom: 0.125em;
     color: #dcdcdc;
     font-weight: bold;
     font-size: 48px;
+
+    margin-top: 0.5em;
+    margin-bottom: 0.125em;
+}
+
+.window .main_text {
+    display: inline-block;
+    text-align: left;
+    color: #dcdcdc;
+    font-weight: normal;
+    font-size: 22px;
+
+    
+    margin-top: 0.5em;
+    margin-bottom: 0.125em;
 }
 
 .window .main_line {
@@ -128,6 +141,14 @@ main .window {
     width: 1195px;
     height: auto;
     border: 2px solid #dcdcdc;
+}
+
+#aboutlink:link {
+    color: #ef7e07;
+}
+
+#aboutlink:visited, #aboutlink:active {
+    color: #e63718;
 }
 
 footer {
