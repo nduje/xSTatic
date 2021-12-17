@@ -137,8 +137,9 @@ main .window {
 }
 
 #video-teaser {
+    position: relative;
     margin: auto;
-    width: 1195px;
+    width: 100%;
     height: auto;
     border: 2px solid #dcdcdc;
 }
