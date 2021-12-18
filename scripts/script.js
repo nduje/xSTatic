@@ -25,6 +25,16 @@ function handleSelectedTab() {
     }
 }
 
+
+let toggleButton = document.getElementsByClassName('toggle-button')[0];
+let navbarLinks = document.getElementsByClassName('navbar_links')[0];
+
+toggleButton.addEventListener('click', dropMenu);
+
+function dropMenu() {
+    navbarLinks.classList.toggle('active');
+}
+
 window.onload = function loadPage() {
     reloadBackgroundImage();
     handleSelectedTab();

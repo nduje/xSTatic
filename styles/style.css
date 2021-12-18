@@ -59,6 +59,12 @@ header {
     border-radius: 20%;
 }
 
+.navbar_links ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
 .tabs {
     display: inline-block;
     color: #dcdcdc;
@@ -86,7 +92,115 @@ header .tabs.selected {
 .isDisabled {
     color: currentColor;
     text-decoration: none;
-  }
+}
+
+.toggle-button {
+    position: absolute;
+    top: 2.8rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1360px) {
+    .tabs {
+        font-size: 1.5em;
+    }
+
+    header .tabs:hover {
+        color: white;
+        text-decoration: solid;
+        border-bottom: 2px transparent solid;
+        margin-bottom: -2px;
+    }
+
+    header .tabs.selected {
+        color: white;
+        text-decoration: solid;
+        border-bottom: 2px white solid;
+        margin-bottom: -2px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .tabs {
+        font-size: 1.0em;
+        margin-right: 5em;
+    }
+
+    header .tabs:hover {
+        color: white;
+        text-decoration: solid;
+        border-bottom: 1px transparent solid;
+        margin-bottom: -1px;
+    }
+    
+    header .tabs.selected {
+        color: white;
+        text-decoration: solid;
+        border-bottom: 1px white solid;
+        margin-bottom: -1px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    #navigation_bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar_links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar_links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tabs {
+        text-align: center;
+        padding: 0.25em;
+        margin: 0;
+    }
+
+    header .tabs:hover {
+        color: white;
+        text-decoration: solid;
+        border-bottom: 1px transparent solid;
+        margin-bottom: -1px;
+    }
+    
+    header .tabs.selected {
+        color: white;
+        text-decoration: solid;
+        border-bottom: 1px transparent solid;
+        margin-bottom: -1px;
+    }
+
+    .tabs a {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar_links.active {
+        display: flex;
+    }
+}
 
 main {
     margin-top: 200px;
