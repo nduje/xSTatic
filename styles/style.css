@@ -422,10 +422,16 @@ hr.footer-line {
         margin: 0.5em auto;
     }
 
+    #footer .xstatic-info {
+        margin-left: 7.5em;
+        margin-right: 7.5em;    
+    }
+
     hr.small-footer-line {
         border: 0.25px solid #4e4e50;
-        margin-left: 7.5em;
-        margin-right: 7.5em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
     }
 
     #footer .small-device-footer-line {
@@ -433,10 +439,11 @@ hr.footer-line {
         border: 1px solid #4e4e50;
         border-radius: 50%;
         opacity: 0.75;
-        margin-left: 5em;
-        margin-right: 5em;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 2em;
         margin-bottom: 2em;
+        width: 75%;
     }
 
     hr.footer-line {
