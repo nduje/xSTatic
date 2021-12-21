@@ -379,8 +379,12 @@ hr.footer-line {
     border: 1px solid #4e4e50;
     border-radius: 50%;
     opacity: 0.75;
-    margin: 15px 5em;
+    width: 90%;
+    
+    margin-top: 15px;
     margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen and (max-width: 1060px) {
@@ -443,11 +447,10 @@ hr.footer-line {
         margin-right: auto;
         margin-top: 2em;
         margin-bottom: 2em;
-        width: 75%;
+        width: 50%;
     }
 
     hr.footer-line {
-        margin: 15px 2.5em;
         margin-top: 2em;
     }
 }
