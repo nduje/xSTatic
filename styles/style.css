@@ -233,6 +233,10 @@ header .tabs.selected {
     }
 }
 
+main {
+    margin-top: 200px;
+}
+
 footer {
     background-color: #1a1a1d;
     
@@ -310,6 +314,10 @@ hr.small-footer-line {
 }
 
 #footer .footer-tabs li:hover {
+    color: white;
+}
+
+#footer .footer-tabs li:active {
     color: white;
 }
 
@@ -453,4 +461,24 @@ hr.footer-line {
     hr.footer-line {
         margin-top: 2em;
     }
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox_images {
+    cursor: pointer;
 }

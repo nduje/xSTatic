@@ -15,6 +15,7 @@ function reloadBackgroundImage() {
     console.log(backgroundImages[random]);
 }
 
+
 let tabs = document.querySelectorAll("#navigation_bar .tabs a");
 
 function handleSelectedTab() {
@@ -34,6 +35,39 @@ toggleButton.addEventListener('click', dropMenu);
 function dropMenu() {
     navbarLinks.classList.toggle('active');
 }
+
+
+let lightbox = document.createElement('div');
+lightbox.id = 'lightbox';
+document.body.appendChild(lightbox);
+
+let images = document.querySelectorAll('.lightbox_images');
+
+for (let image of images) {
+    image.addEventListener('click', openImage);
+}   
+
+function openImage(e) {
+    lightbox.classList.add('active');
+    let img = document.createElement('img');
+    img.src = e.currentTarget.getAttribute('src');
+
+    while (lightbox.firstChild) {
+        lightbox.removeChild(lightbox.firstChild)
+    }
+
+    lightbox.appendChild(img);
+}
+
+lightbox.addEventListener('click', handleLightbox);
+
+function handleLightbox(e) {
+    if (e.target != e.currentTarget)
+        return
+    
+    lightbox.classList.remove('active')
+}
+
 
 window.onload = function loadPage() {
     reloadBackgroundImage();
