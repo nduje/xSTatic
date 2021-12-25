@@ -612,6 +612,12 @@ hr.footer-line {
     align-items: center;
 }
 
+#lightbox img {
+    width: 50%;
+    height: auto;
+    border: #dcdcdc 2px solid;
+}
+
 .lightbox_images {
     cursor: pointer;
 }
