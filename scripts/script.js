@@ -95,7 +95,10 @@ if (window.location.href.includes('category.html')) {
 }
 
 for (let category of categories) {
-    category.addEventListener('click', handleCategory);
+    category.addEventListener('click', (e) => {
+        handleCategory(e);
+        refreshThumbnails();
+    });
 }
 
 function handleCategory(e) {
@@ -122,11 +125,43 @@ function getCurrentIndex() {
 }
 
 function handleCategoryContent(index) {
-    for (let categoryContent of categoriesContent)
+    for (let categoryContent of categoriesContent) {
         categoryContent.classList.remove('selected');
+    }
 
     categoriesContent[index].classList.add('selected');
 }
+
+let currentMainImages = document.querySelectorAll('.slider_main_picture');
+
+let thumbnails = document.querySelectorAll('.thumbnail');
+
+let selectedThumbnails = document.querySelectorAll('.thumbnail.selected');
+
+for (let thumbnail of thumbnails) {
+    thumbnail.addEventListener('click', handleThumbnail)
+}
+
+function handleThumbnail(e) {
+    let selectedThumbnail = e.currentTarget;
+
+    for (let thumbnail of thumbnails) {
+        thumbnail.classList.remove('selected');
+    }
+
+    selectedThumbnail.classList.add('selected');
+
+    for(let currentMainImage of currentMainImages) {
+        currentMainImage.querySelector('img').src = selectedThumbnail.querySelector('img').src;
+    }
+}
+
+function refreshThumbnails() {
+    for (let i = 0; i < selectedThumbnails.length; i++) {
+        currentMainImages[i].querySelector('img').src = selectedThumbnails[i].querySelector('img').src;
+        selectedThumbnails[i].classList.add('selected');
+    }
+}   
 
 
 window.onload = function loadPage() {
