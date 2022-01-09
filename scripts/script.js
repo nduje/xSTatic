@@ -157,11 +157,36 @@ function handleThumbnail(e) {
 }
 
 function refreshThumbnails() {
+    for (let i = 0; i < thumbnails.length; i++) {
+        thumbnails[i].classList.remove('selected');
+    }
+    
     for (let i = 0; i < selectedThumbnails.length; i++) {
         currentMainImages[i].querySelector('img').src = selectedThumbnails[i].querySelector('img').src;
         selectedThumbnails[i].classList.add('selected');
     }
-}   
+}
+
+
+let years = document.querySelectorAll('.years');
+
+if (window.location.href.includes('gallery.html')) {
+    years[0].classList.add('selected');
+}
+
+for (let year of years) {
+    year.addEventListener('click', handleYear);
+}
+
+function handleYear(e) {
+    let selectedYear = e.currentTarget;
+
+    for (let year of years) {
+        year.classList.remove('selected');
+    }
+
+    selectedYear.classList.add('selected');
+}
 
 
 window.onload = function loadPage() {

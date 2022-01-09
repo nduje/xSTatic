@@ -1,0 +1,41 @@
+.sub_window {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.years_menu {
+    margin-right: 2.5em;
+}
+
+.years_menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    position: sticky;
+    top: 150px;
+}
+
+.years {
+    display: inline-block;
+    color: #dcdcdc;
+    text-shadow: -1px -1px 0 #000;
+    font-size: 32px;
+    list-style: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0.5em;
+}
+
+.years:hover {
+    color: #fcb535;
+}
+
+.years.selected {
+    color: #ee9e1f;
+}
