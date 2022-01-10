@@ -6,7 +6,7 @@
         <title>xSTatic</title>
         <meta name="viewport" content="width=device-width initial-scale=1">
         <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="styles/style_contact_info.css">
+        <link rel="stylesheet" href="styles/style_contact.css">
     </head>
 
     <body>

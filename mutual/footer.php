@@ -13,10 +13,10 @@
         <div class="footer-tabs">
             <ul>
                 <li class="tabs"><a class="isDisabled" href="index.php" target="_self">home</a></li>
-                <li class="tabs"><a class= "isDisabled" href="about.php" target="_self">about</a></li>
-                <li class="tabs"><a class= "isDisabled" href="gallery.php" target="_self">gallery</a></li>
-                <li class="tabs"><a class= "isDisabled" href="category.php" target="_self">category</a></li>
-                <li class="tabs"><a class= "isDisabled" href="contact.php" target="_self">contact</a></li>
+                <li class="tabs"><a class="isDisabled" href="about.php" target="_self">about</a></li>
+                <li class="tabs"><a class="isDisabled" href="gallery.php" target="_self">gallery</a></li>
+                <li class="tabs"><a class="isDisabled" href="category.php" target="_self">category</a></li>
+                <li class="tabs"><a class="isDisabled" href="contact.php" target="_self">contact</a></li>
             </ul>
         </div>
         <hr class="small-device-footer-line">
@@ -33,7 +33,10 @@
         <a href="https://www.instagram.com/xstaticfestival/?hl=en" target="_blank"><img src="images/instagram.png" alt="instagram" class="social_logo"></a>
         <a href="https://www.youtube.com/user/xstaticfestival" target="_blank"><img src="images/youtube.png" alt="youtube" class="social_logo"></a>
     </div>
-    <div  id="copyright">
+    <div id="login_link">
+        <a href="login.php" target="_self" class="isDisabled">Log-in</a>
+    </div>
+    <div id="copyright">
         <label>©2022 xSTatic Festival</label>
     </div>
 </footer>

@@ -511,6 +511,15 @@ hr.small-footer-line {
 
 }
 
+#login_link {
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    color: #888888;
+    font-size: 75%;
+    padding-bottom: 0.25em;
+}
+
 #copyright {
     color: #4e4e50;
     font-size: 75%;
