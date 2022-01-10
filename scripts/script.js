@@ -109,12 +109,12 @@ function handleCategory(e) {
     
     selectedCategory.classList.add('selected');
 
-    let currentIndex = getCurrentIndex();
+    let currentIndex = getCurrentIndexCategory();
 
     handleCategoryContent(currentIndex);
 }
 
-function getCurrentIndex() {
+function getCurrentIndexCategory() {
     let selectedCategory = document.querySelector('.categories.selected');
 
     for (let i = 0; i < categories.length; i++) {
@@ -169,9 +169,11 @@ function refreshThumbnails() {
 
 
 let years = document.querySelectorAll('.years');
+let galleryGrids = document.querySelectorAll('.gallery');
 
 if (window.location.href.includes('gallery.html')) {
     years[0].classList.add('selected');
+    galleryGrids[0].classList.add('selected');
 }
 
 for (let year of years) {
@@ -186,6 +188,29 @@ function handleYear(e) {
     }
 
     selectedYear.classList.add('selected');
+
+    let currentIndex = getCurrentIndexGallery();
+
+    handleGalleryGrid(currentIndex);
+}
+
+function getCurrentIndexGallery() {
+    let selectedYear = document.querySelector('.years.selected');
+
+    for (let i = 0; i < years.length; i++) {
+        if (selectedYear == years[i]) {
+            return i;
+        }
+    }
+}
+
+function handleGalleryGrid(index) {
+    for (let galleryGrid of galleryGrids) {
+        galleryGrid.classList.remove('selected');
+    }
+
+   
+    galleryGrids[index].classList.add('selected');
 }
 
 

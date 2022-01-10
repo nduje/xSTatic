@@ -95,3 +95,11 @@ img {
     border-bottom: 2.5px solid #ee9e1f;;
     margin-bottom: 2.5px;
 }
+
+.category_article {
+    text-align: center;
+}
+
+.categories_content_window .category_article p {
+    text-align: center;
+}
