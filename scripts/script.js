@@ -20,10 +20,17 @@ let tabs = document.querySelectorAll("#navigation_bar .tabs a");
 
 function handleSelectedTab() {
     for (let tab of tabs) {
+        tab.parentElement.classList.remove('selected');
+    }
+
+    for (let tab of tabs) {
         if (tab.href == window.location.href) {
-            tab.parentElement.classList.add("selected");
+            tab.parentElement.classList.add('selected');
+            return;
         }
     }
+
+    tabs[0].parentElement.classList.add('selected');
 }
 
 
@@ -89,7 +96,7 @@ let categories = document.querySelectorAll('.categories');
 
 let categoriesContent = document.querySelectorAll('.categories_content');
 
-if (window.location.href.includes('category.html')) {
+if (window.location.href.includes('category.php')) {
     categories[0].classList.add('selected');
     categoriesContent[0].classList.add('selected');
 }
@@ -171,7 +178,7 @@ function refreshThumbnails() {
 let years = document.querySelectorAll('.years');
 let galleryGrids = document.querySelectorAll('.gallery');
 
-if (window.location.href.includes('gallery.html')) {
+if (window.location.href.includes('gallery.php')) {
     years[0].classList.add('selected');
     galleryGrids[0].classList.add('selected');
 }
