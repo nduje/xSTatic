@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: linear-gradient(rgba(38, 38, 42, 0.5), rgba(38, 38, 42, 0.5));
+}
+
+.back_arrow {
+    width: 75px;
+    height: auto;
+
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+
+    cursor: pointer;
+}
+
+.back_arrow:hover, .back_arrow:active {
+    transform: scale(1.25);
+}
+
+.main {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.login_window {
+    display: flex;
+    flex-direction: column;
+
+    width: 20%;
+    height: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+    justify-content: center;
+    align-items: center;
+
+
+    border-radius: 5%;
+    border: 2px solid #dcdcdc;
+    background: rgb(30, 30, 34);
+}
+
+.login_content {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+}
+
+.login_title {
+    display: inline-block;
+    color: #dcdcdc;
+    text-shadow: -1px -1px 0 #000000;
+    font-weight: bold;
+    font-size: 40px;
+
+    margin-bottom: 1em;
+}
+
+.warning_message {
+    display: none;
+    color: rgb(220, 0, 0);
+    text-shadow: -1px -1px 0 #000000;
+
+    margin: 0;
+
+    font-size: 14px;
+}
+
+.warning_message.selected {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 25%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    
+}
+
+.input_label {
+    color: #dcdcdc;
+    text-shadow: -1px -1px 0 #000000;
+
+    font-size: 18px;
+}
+
+input {
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 550;
+
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+
+    width: 70%;
+    height: 30px;
+}
+
+.signup_link {
+    text-decoration: none;
+    color: #888888;
+
+    font-size: 12px;
+
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 0.25em;
+    margin-bottom: 0;
+}
+
+.signup_link:hover {
+    color: #9c9c9c;
+}
+
+.login_button, .signup_button {
+    margin-top: 0.25em;
+    font-size: 16px;
+    border-radius: 5%;
+
+    text-align: center;
+
+    width: 30%;
+    height: auto;
+
+    padding-left: auto;
+    padding-right: auto;
+
+    cursor: pointer;
+
+    background: rgb(56, 56, 60);
+
+    color: #dcdcdc;
+    text-shadow: -1px -1px 0 #000; 
+}
+
+.login_button:hover, .login_button:active {
+    background: rgb(60, 60, 64);
+}

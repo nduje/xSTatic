@@ -221,7 +221,64 @@ function handleGalleryGrid(index) {
 }
 
 
+let loggedButton = document.querySelectorAll('.log_link');
+let loggedUserDiv = document.querySelector('.logged_user_div');
+
+let loggedUser = getCookie('logged');
+
+console.log(loggedUser);
+
+
+
+function checkLoggedButton() {
+    if (loggedUser) {
+        loggedButton[0].classList.remove('selected');
+        loggedButton[1].classList.add('selected');
+        
+        loggedUserDiv.classList.add('selected');
+        loggedUserDiv.textContent = `LOGGED IN AS ${loggedUser}`;
+    }
+
+    else {
+        loggedButton[0].classList.add('selected');
+        loggedButton[1].classList.remove('selected');
+        
+        loggedUserDiv.classList.add('selected');
+    }
+}
+
+let logoutButton = document.querySelector('.logout_link');
+
+logoutButton.addEventListener('click', () => {
+    eraseCookie('logged');
+    location.reload();
+});
+
+
+function getCookie(name) {
+    let nameEQ = name + "=";
+    let ca = document.cookie.split(';');
+
+    for (var i=0;i < ca.length;i++) {
+        let c = ca[i];
+
+        while (c.charAt(0)==' ')
+            c = c.substring(1,c.length);
+
+        if (c.indexOf(nameEQ) == 0)
+            return c.substring(nameEQ.length,c.length);
+    }
+
+    return null;
+}
+
+function eraseCookie(name) {   
+    document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+
+
 window.onload = function loadPage() {
     reloadBackgroundImage();
     handleSelectedTab();
+    checkLoggedButton();
 }

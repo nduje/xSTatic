@@ -33,8 +33,14 @@
         <a href="https://www.instagram.com/xstaticfestival/?hl=en" target="_blank"><img src="images/instagram.png" alt="instagram" class="social_logo"></a>
         <a href="https://www.youtube.com/user/xstaticfestival" target="_blank"><img src="images/youtube.png" alt="youtube" class="social_logo"></a>
     </div>
-    <div id="login_link">
-        <a href="login.php" target="_self" class="isDisabled">Log-in</a>
+    <div class="log_link login_link">
+        <a href="login.php" target="_self" class="isDisabled">Login</a>
+    </div>
+    <div class="log_link logout_link">
+        <a target="_self" class="isDisabled">Logout</a>
+    </div>
+    <div class="logged_user_div">
+        <label id="logged_user"></label>
     </div>
     <div id="copyright">
         <label>©2022 xSTatic Festival</label>

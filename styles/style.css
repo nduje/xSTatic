@@ -511,7 +511,7 @@ hr.small-footer-line {
 
 }
 
-#login_link {
+.log_link {
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
@@ -519,6 +519,36 @@ hr.small-footer-line {
     font-size: 75%;
     padding-bottom: 0.25em;
 }
+
+.log_link:hover {
+    color: #9c9c9c;
+}
+
+.login_link, .logout_link{
+    display: none;
+}
+
+.login_link.selected, .logout_link.selected {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logged_user_div {
+    display: none;
+    
+    text-align: center;
+    color: #888888;
+    font-size: 75%;
+    padding-bottom: 0.25em;
+}
+
+.logged_user_div.selected {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 
 #copyright {
     color: #4e4e50;
