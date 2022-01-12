@@ -92,6 +92,17 @@ function handleLightbox(e) {
 }
 
 
+let toggleCategories = document.getElementsByClassName('toggle_categories')[0];
+let categoriesMenu = document.getElementsByClassName('categories_menu')[0];
+let horizontalLine = document.querySelector('hr');
+
+toggleCategories.addEventListener('click', dropCategoriesMenu);
+
+function dropCategoriesMenu() {
+    categoriesMenu.classList.toggle('active');
+    horizontalLine.classList.toggle('unactive');
+}
+
 let categories = document.querySelectorAll('.categories');
 
 let categoriesContent = document.querySelectorAll('.categories_content');
@@ -99,6 +110,8 @@ let categoriesContent = document.querySelectorAll('.categories_content');
 if (window.location.href.includes('category.php')) {
     categories[0].classList.add('selected');
     categoriesContent[0].classList.add('selected');
+
+    toggleCategories.textContent = categories[0].textContent;
 }
 
 for (let category of categories) {
@@ -115,6 +128,8 @@ function handleCategory(e) {
         category.classList.remove('selected');
     
     selectedCategory.classList.add('selected');
+
+    toggleCategories.textContent = selectedCategory.textContent;
 
     let currentIndex = getCurrentIndexCategory();
 

@@ -14,17 +14,18 @@
 
         <main>
             <div class="window">
-                <div class="categories_menu">
-                    <ul>
-                        <li class="categories"><a class="isDisabled">graffiti</a></li>
-                        <li class="categories"><a class="isDisabled">skateboarding</a></li>
-                        <li class="categories"><a class="isDisabled">basketball</a></li>
-                        <li class="categories"><a class="isDisabled">breakdance</a></li>
-                        <li class="categories"><a class="isDisabled">concert</a></li>
-                        <li class="categories"><a class="isDisabled">stand-up</a></li>
-                    </ul>
-                    <hr class="main_line">
-                </div>
+              <a class="toggle_categories"></a>
+              <div class="categories_menu">
+                  <ul>
+                      <li class="categories"><a class="isDisabled">graffiti</a></li>
+                      <li class="categories"><a class="isDisabled">skateboarding</a></li>
+                      <li class="categories"><a class="isDisabled">basketball</a></li>
+                      <li class="categories"><a class="isDisabled">breakdance</a></li>
+                      <li class="categories"><a class="isDisabled">concert</a></li>
+                      <li class="categories"><a class="isDisabled">stand-up</a></li>
+                  </ul>
+              </div>
+              <hr class="main_line">
             </div>
             <div class="window categories_content_window">
                 <div class="categories_content">

@@ -1,3 +1,19 @@
+.toggle_categories {
+    display: none;
+
+    width: 75%;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 750;
+    color: #ee9e1f; 
+    text-shadow: -1px -1px 0 #000;
+    cursor: pointer;
+
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .categories_menu ul{
     display: flex;
     flex-direction: row;
@@ -102,4 +118,92 @@ img {
 
 .categories_content_window .category_article p {
     text-align: center;
+}
+
+@media screen and (max-width: 1520px) {
+    .categories {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .categories {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .categories {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .categories {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .categories {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .categories {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .categories_menu {
+        display: none;
+        background-color: rgba(38, 38, 42, 0.4);
+        border-radius: 12.5%;
+        width: 50%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .categories_menu.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .categories_menu ul {
+        flex-direction: column;
+    }
+
+    .categories_ menu ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .categories {
+        font-size: 22px;
+    }
+
+    .toggle_categories {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+    hr {
+        display: flex;
+        width: 75%;
+        margin-top: -2.5em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    hr.unactive {
+        display: none;
+    }
 }
