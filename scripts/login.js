@@ -54,7 +54,7 @@ if (window.location.href.includes("login.php")) {
                 loginInput.value = "";
             }
 
-            setCookie('logged', username, 1);
+            setCookie('logged', responseData.id, 1);
 
             history.back();
         }

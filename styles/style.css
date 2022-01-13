@@ -348,6 +348,12 @@ main .window {
     }
 }
 
+@media screen and (max-width: 860px) {
+    .window .main_text {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 640px) {
     main {
         margin-top: 150px;

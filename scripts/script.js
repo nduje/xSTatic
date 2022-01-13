@@ -50,22 +50,38 @@ document.body.appendChild(lightbox);
 
 let images = document.querySelectorAll('.lightbox_images');
 
+setInterval(() => {
+    getWindowWidth();
+    removeLightbox();
+}, 500);
+
+function getWindowWidth() {
+    return window.innerWidth;
+}
+
+function removeLightbox() {
+    if (window.innerWidth < 1060)
+        lightbox.classList.remove('active');
+}
+
 for (let image of images) {
     image.addEventListener('click', openImage);
-}   
+}
 
 function openImage(e) {
-    lightbox.classList.add('active');
-    let img = document.createElement('img');
-    img.src = e.currentTarget.getAttribute('src');
+    if (getWindowWidth() > 1060) {
+        lightbox.classList.add('active');
+        let img = document.createElement('img');
+        img.src = e.currentTarget.getAttribute('src');
 
-    while (lightbox.firstChild) {
-        lightbox.removeChild(lightbox.firstChild)
+        while (lightbox.firstChild) {
+            lightbox.removeChild(lightbox.firstChild)
+        }
+
+        lightbox.appendChild(img);
+
+        handleLightboxSize(lightbox, e.currentTarget);
     }
-
-    lightbox.appendChild(img);
-
-    handleLightboxSize(lightbox, e.currentTarget);
 }
 
 function handleLightboxSize(lightbox, img) {
@@ -96,7 +112,9 @@ let toggleCategories = document.getElementsByClassName('toggle_categories')[0];
 let categoriesMenu = document.getElementsByClassName('categories_menu')[0];
 let horizontalLine = document.querySelector('hr');
 
-toggleCategories.addEventListener('click', dropCategoriesMenu);
+if(window.location.href.includes('category.php')) {
+    toggleCategories.addEventListener('click', dropCategoriesMenu);
+}
 
 function dropCategoriesMenu() {
     categoriesMenu.classList.toggle('active');

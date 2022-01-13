@@ -33,12 +33,14 @@ function processLoginUser() {
     $id = -1;
     $success = false;
     $reason = "";
+    $setTime = -1;
 
     $incorrectAttribute = checkIncorrectAttribute($username, $password);
 
 
     if ((!empty($username) && !empty($password)) && !($incorrectAttribute)) {
         $id = loginUser($username, $password);
+        $setTime = setLoginTime($username, $password);
         $success = true;
     }
 
@@ -63,7 +65,8 @@ function processLoginUser() {
            array(
               "id" => $id,
               "reason" => $reason,
-              "success" => $success
+              "success" => $success,
+              "loginTime" => $setTime
            )
         )
      );

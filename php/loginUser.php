@@ -6,3 +6,9 @@ function loginUser($username, $password) {
         "SELECT userID FROM accounts WHERE userID = '$username' AND  userPassword = '$password'"
     );
 }
+
+function setLoginTime($username, $password) {
+    return getDatabaseAccess()->executeInsertQuery(
+        "UPDATE accounts SET lastLogin = CURRENT_TIMESTAMP WHERE userID = '$username' AND  userPassword = '$password'"
+    );
+}
