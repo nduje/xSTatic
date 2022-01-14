@@ -17,6 +17,7 @@
                 <label class="label-text">Gallery</label>
                 <hr class="main_line">
                 <div class="sub_window">
+                    <a class="toggle_years"></a>
                     <div class="years_menu">
                         <ul>
                             <li class="years"><a class="isDisabled">2021</a></li>

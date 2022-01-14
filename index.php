@@ -39,7 +39,7 @@
                         and STJam.
                     </p>
                     <br>
-                    <label class="main_text"><a href="about.html" id="aboutlink" target="_self">View more...</a></label>
+                    <label class="main_text"><a href="about.php" id="aboutlink" target="_self">View more...</a></label>
                 </div>
             </div>
 
@@ -47,6 +47,13 @@
                 <label class="label-text">Festival Gallery</label>
                 <hr class="main_line">
                 <div id="gallery_article">
+                <p class="main_text">
+                        You haven't been to the festival in previous years, and you want to see what the murals 
+                        look like or what the atmosphere was like at the concert?
+                        <br>
+                        You can <a href="gallery.php" id="aboutlink" target="_self">see</a> what you missed out!
+                    </p>
+                    <br>
                 </div>
             </div>
 
@@ -54,6 +61,14 @@
                 <label class="label-text">Categories</label>
                 <hr class="main_line">
                 <div id="category_article">
+                    <p class="main_text">
+                        You don't know anything about street art culture, but you want to start doing graffiti 
+                        art or you want to learn something more about extreme sports? 
+                        Or maybe you want to expand your musical opuses with traditional rap and hip-hop culture?
+                        <br>
+                        You can <a href="category.php" id="aboutlink" target="_self">learn more</a> on our category page.
+                    </p>
+                    <br>
                 </div>
             </div>
 
@@ -64,7 +79,7 @@
                     <p class="main_text">
                         Not sure where the festival is or how to contact the people working on the project?
                         <br>
-                        Go to the <a href="contact_info.html" id="aboutlink" target="_self">contact page</a> and find out!
+                        Go to the <a href="contact.php" id="aboutlink" target="_self">contact page</a> and find out!
                     </p>
                     <br>
                 </div>

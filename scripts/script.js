@@ -110,7 +110,6 @@ function handleLightbox(e) {
 
 let toggleCategories = document.getElementsByClassName('toggle_categories')[0];
 let categoriesMenu = document.getElementsByClassName('categories_menu')[0];
-let horizontalLine = document.querySelector('hr');
 
 if(window.location.href.includes('category.php')) {
     toggleCategories.addEventListener('click', dropCategoriesMenu);
@@ -118,7 +117,6 @@ if(window.location.href.includes('category.php')) {
 
 function dropCategoriesMenu() {
     categoriesMenu.classList.toggle('active');
-    horizontalLine.classList.toggle('unactive');
 }
 
 let categories = document.querySelectorAll('.categories');
@@ -207,6 +205,17 @@ function refreshThumbnails() {
     }
 }
 
+let toggleYears = document.getElementsByClassName('toggle_years')[0];
+let yearsMenu = document.getElementsByClassName('years_menu')[0];
+
+if(window.location.href.includes('gallery.php')) {
+    toggleYears.addEventListener('click', dropYearsMenu);
+}
+
+function dropYearsMenu() {
+    yearsMenu.classList.toggle('active');
+}
+
 
 let years = document.querySelectorAll('.years');
 let galleryGrids = document.querySelectorAll('.gallery');
@@ -214,6 +223,8 @@ let galleryGrids = document.querySelectorAll('.gallery');
 if (window.location.href.includes('gallery.php')) {
     years[0].classList.add('selected');
     galleryGrids[0].classList.add('selected');
+
+    toggleYears.textContent = years[0].textContent;
 }
 
 for (let year of years) {
@@ -228,6 +239,8 @@ function handleYear(e) {
     }
 
     selectedYear.classList.add('selected');
+
+    toggleYears.textContent = selectedYear.textContent;
 
     let currentIndex = getCurrentIndexGallery();
 

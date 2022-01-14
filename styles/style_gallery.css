@@ -7,6 +7,23 @@
     padding: 0;
 }
 
+.toggle_years {
+    display: none;
+
+    width: 75%;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 750;
+    color: #ee9e1f; 
+    text-shadow: -1px -1px 0 #000;
+    text-decoration: underline;
+    cursor: pointer;
+
+    margin-bottom: 0.25em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .years_menu {
     display: inline-block;
     margin-right: 2.5em;
@@ -97,4 +114,109 @@
     object-fit: cover;
     
     border: 1px solid #dcdcdc;
+}
+
+@media screen and (max-width: 1160px) {
+    .sub_window {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .years_menu {
+        width: 100%;
+    }
+    
+    .years_menu ul{
+        flex-direction: row;
+        position: relative;
+        width: 100%;
+
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .year_menu {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .years {
+        font-size: 27px;
+    }
+
+    .gallery.gallery.selected {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .years_menu {
+        display: none;
+        background-color: rgba(38, 38, 42, 0.4);
+        border-radius: 12.5%;
+        width: 50%;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.5em;
+    }
+
+    .years_menu.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .years_menu ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .years {
+        font-size: 22px;
+        text-align: center;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .toggle_years {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .toggle_years {
+        font-size: 36px;
+        width: 75%;
+    }
+
+    .categories {
+        font-size: 16px;
+    }
 }

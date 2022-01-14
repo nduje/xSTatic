@@ -27,14 +27,12 @@
 }
 
 #xstatic_festival_sky_view {
-    max-width: 37.5%;
-    width: auto;
+    width: 37.5%;
     height: auto;
 }
 
 #skate_park_znjan {
-    max-width: 30%;
-    width: auto;
+    width: 30%;
     height: auto;
 }
 
@@ -45,7 +43,100 @@
 }
 
 #organisators {
-    max-width: 50%;
-    width: auto;
+    width: 70%;
     height: auto;
+}
+
+@media screen and (max-width: 1360px) {
+    .about-paragraph-2 p {
+        margin-left: 1em;
+    }
+    
+    #xstatic_festival_sky_view {
+        width: 50%;
+        height: auto;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-paragraph-2 p {
+        margin-right: 1em;
+    }
+    
+    #skate_park_znjan {
+        width: 50%;
+        height: auto;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .about-paragraph-2 {
+        flex-direction: column-reverse;
+    }
+    
+    #xstatic_festival_sky_view {
+        width: 70%;
+        height: auto;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-paragraph-4 {
+        flex-direction: column;
+    }
+    
+    #skate_park_znjan {
+        width: 70%;
+        height: auto;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    #xstatic_festival_sky_view {
+        width: 80%;
+    }
+    
+    #skate_park_znjan {
+        width: 80%;
+    }
+
+    #organisators {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    #xstatic_festival_sky_view {
+        width: 90%;
+    }
+    
+    #skate_park_znjan {
+        width: 90%;
+    }
+
+    #organisators {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    #xstatic_festival_sky_view {
+        width: 100%;
+    }
+    
+    #skate_park_znjan {
+        width: 100%;
+    }
+
+    #organisators {
+        width: 100%;
+    }
 }

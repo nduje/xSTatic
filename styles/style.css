@@ -667,3 +667,9 @@ hr.footer-line {
 .lightbox_images {
     cursor: pointer;
 }
+
+@media screen and (max-width: 1060px) {
+    .lightbox_images {
+        cursor: default;
+    }
+}

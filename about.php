@@ -64,7 +64,7 @@
                         EUrbanFestival for Europe Day 2010, in Zagreb on the plateau MSU.
                     </p>
                     <div class="image_positioner">
-                        <img src="images/about_images/organisators.jpg" alt="organisators" id="#organisators" class="lightbox_images about_img">
+                        <img src="images/about_images/organisators.jpg" alt="organisators" id="organisators" class="lightbox_images about_img">
                     </div>
                     <br>
                     <p class="main_text">

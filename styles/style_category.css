@@ -194,14 +194,6 @@ img {
     }
 
     hr {
-        display: flex;
-        width: 90%;
-        margin-top: -3em;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    hr.unactive {
         display: none;
     }
 }
@@ -214,10 +206,5 @@ img {
 
     .categories {
         font-size: 16px;
-    }
-
-    hr {
-        width: 75%;
-        margin-top: -2.5em;
     }
 }
